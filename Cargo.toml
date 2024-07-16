@@ -1,0 +1,12 @@
+[package]
+name = "encoding-utils"
+version = "0.1.0"
+edition = "2021"
+authors = ["a632079"]
+
+[dependencies]
+encoding_rs = "0.8.26"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.52", features = ["Win32_Globalization"] }
+codepage = "0.1"
